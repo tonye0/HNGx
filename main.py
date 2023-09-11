@@ -14,7 +14,7 @@ class Profile(BaseModel):
     status_code: int
 
 
-@app.get("/")
+@app.get("/api")
 async def profile(slack_name: str = "Fortune_Mina", track: str = "backend"):
     
     current_utc_time = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
